@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume</title>
+    <style>
+      body {
+          background-image: url("./image/background.webp");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+          background-color: hsla(0,0%,100%,0.70);
+          background-blend-mode: overlay;
+          text-align: center;
+      }
+  </style>
+</head>
+
+<body id="body">
+    <h1 style="text-align: center;">List of object make by metal and their volume in one components</h1>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Material</th>
+            <th scope="col">Volume</th>
+            <th scope="col">Sum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Volume of solid shape</th>
+            <td id="solid_material">Aluminum</td>
+            <td id="solid_volume">1</td>
+            <td id="sum_solid_volume">1</td>
+          </tr>
+          <tr>
+            <th scope="row" id="plate">Volume of metal plate</th>
+            <td id="plate_material">Aluminum</td>
+            <td id="plate_volume">1</td>
+            <td id="sum_plate_volume">1</td>
+          </tr>
+          <tr>
+            <th scope="row" id="material">Volume of each metal needed</th>
+            <td id="material_material">Aluminum</td>
+            <td id="material_volume">1</td>
+            <td id="sum_material_volume">1</td>
+          </tr>
+        </tbody>
+      </table>
+    <h3 style="text-align: right; padding-right: 50px;" id="num_of_instance"></h3>
+    <h3 style="text-align: right; padding-right: 50px;" id="total_volume"></h3>
+</body>
+<script>
+    // onReadyStateChange event is an alternative to load event.
+    document.onreadystatechange = function () {
+        if (document.readyState === 'complete') {
+            // Call the dialog's ready callback:
+            sketchup.ready();
+        }
+    }
+</script>
+
+</html>
